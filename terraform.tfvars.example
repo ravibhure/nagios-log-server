@@ -1,0 +1,6 @@
+# DO Credentials
+do_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+pub_key = "~/.ssh/id_rsa.pub"
+pvt_key = "~/.ssh/id_rsa"
+ssh_fingerprint = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+ssh_keys = "1975333"
