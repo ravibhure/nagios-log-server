@@ -15,19 +15,22 @@ After you run `terraform apply` on this configuration, it will
 automatically output the testnow and watchdog url. After your instance
 registers and successful run with shell script, this should respond with the default nagios log server web page.
 
-To run, configure your DO provider as described in
+* To run, configure your DO provider as described in
 
 https://www.terraform.io/docs/providers/do/index.html
 
-Run with a command like this:
+* First copy the `terraform.tfvars.example` to `terraform.tfvars` and update the digital ocean details in it.
+
+
+* Prepare plan
 
 ```
-terraform apply -var 'key_name={your_aws_key_name}' \
-   -var 'key_path={location_of_your_key_in_your_local_machine}'`
+terraform plan
 ```
 
-For example:
+
+* Run with a command like this:
 
 ```
-terraform apply -var 'key_name=terraform' -var 'key_path=/Users/jsmith/.ssh/terraform.pem'
+terraform apply
 ```
